@@ -1,274 +1,178 @@
-# Auto-GPT: An Autonomous GPT-4 Experiment
-![GitHub Repo stars](https://img.shields.io/github/stars/Torantulino/auto-gpt?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/siggravitas?style=social)
-[![](https://dcbadge.vercel.app/api/server/PQ7VX6TY4t?style=flat)](https://discord.gg/PQ7VX6TY4t)
+# AutoGPT: Build, Deploy, and Run AI Agents
 
-Auto-GPT is an experimental open-source application showcasing the capabilities of the GPT-4 language model. This program, driven by GPT-4, chains together LLM "thoughts", to autonomously achieve whatever goal you set. As one of the first examples of GPT-4 running fully autonomously, Auto-GPT pushes the boundaries of what is possible with AI.
+[![Discord Follow](https://dcbadge.vercel.app/api/server/autogpt?style=flat)](https://discord.gg/autogpt) &ensp;
+[![Twitter Follow](https://img.shields.io/twitter/follow/Auto_GPT?style=social)](https://twitter.com/Auto_GPT) &ensp;
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### Demo (30/03/2023):
-https://user-images.githubusercontent.com/22963551/228855501-2f5777cf-755b-4407-a643-c7299e5b6419.mp4
+**AutoGPT** is a powerful platform that allows you to create, deploy, and manage continuous AI agents that automate complex workflows. 
 
+## Hosting Options 
+   - Download to self-host
+   - [Join the Waitlist](https://bit.ly/3ZDijAI) for the cloud-hosted beta  
 
-<h2 align="center"> 💖 Help Fund Auto-GPT's Development 💖</h2>
+## How to Setup for Self-Hosting
+> [!NOTE]
+> Setting up and hosting the AutoGPT Platform yourself is a technical process. 
+> If you'd rather something that just works, we recommend [joining the waitlist](https://bit.ly/3ZDijAI) for the cloud-hosted beta.
+
+https://github.com/user-attachments/assets/d04273a5-b36a-4a37-818e-f631ce72d603
+
+This tutorial assumes you have Docker, VSCode, git and npm installed.
+
+### 🧱 AutoGPT Frontend
+
+The AutoGPT frontend is where users interact with our powerful AI automation platform. It offers multiple ways to engage with and leverage our AI agents. This is the interface where you'll bring your AI automation ideas to life:
+
+   **Agent Builder:** For those who want to customize, our intuitive, low-code interface allows you to design and configure your own AI agents. 
+   
+   **Workflow Management:** Build, modify, and optimize your automation workflows with ease. You build your agent by connecting blocks, where each block     performs a single action.
+   
+   **Deployment Controls:** Manage the lifecycle of your agents, from testing to production.
+   
+   **Ready-to-Use Agents:** Don't want to build? Simply select from our library of pre-configured agents and put them to work immediately.
+   
+   **Agent Interaction:** Whether you've built your own or are using pre-configured agents, easily run and interact with them through our user-friendly      interface.
+
+   **Monitoring and Analytics:** Keep track of your agents' performance and gain insights to continually improve your automation processes.
+
+[Read this guide](https://docs.agpt.co/platform/new_blocks/) to learn how to build your own custom blocks.
+
+### 💽 AutoGPT Server
+
+The AutoGPT Server is the powerhouse of our platform This is where your agents run. Once deployed, agents can be triggered by external sources and can operate continuously. It contains all the essential components that make AutoGPT run smoothly.
+
+   **Source Code:** The core logic that drives our agents and automation processes.
+   
+   **Infrastructure:** Robust systems that ensure reliable and scalable performance.
+   
+   **Marketplace:** A comprehensive marketplace where you can find and deploy a wide range of pre-built agents.
+
+### 🐙 Example Agents
+
+Here are two examples of what you can do with AutoGPT:
+
+1. **Generate Viral Videos from Trending Topics**
+   - This agent reads topics on Reddit.
+   - It identifies trending topics.
+   - It then automatically creates a short-form video based on the content. 
+
+2. **Identify Top Quotes from Videos for Social Media**
+   - This agent subscribes to your YouTube channel.
+   - When you post a new video, it transcribes it.
+   - It uses AI to identify the most impactful quotes to generate a summary.
+   - Then, it writes a post to automatically publish to your social media. 
+
+These examples show just a glimpse of what you can achieve with AutoGPT! You can create customized workflows to build agents for any use case.
+
+---
+### Mission and Licencing
+Our mission is to provide the tools, so that you can focus on what matters:
+
+- 🏗️ **Building** - Lay the foundation for something amazing.
+- 🧪 **Testing** - Fine-tune your agent to perfection.
+- 🤝 **Delegating** - Let AI work for you, and have your ideas come to life.
+
+Be part of the revolution! **AutoGPT** is here to stay, at the forefront of AI innovation.
+
+**📖 [Documentation](https://docs.agpt.co)**
+&ensp;|&ensp;
+**🚀 [Contributing](CONTRIBUTING.md)**
+
+**Licensing:**
+
+MIT License: The majority of the AutoGPT repository is under the MIT License.
+
+Polyform Shield License: This license applies to the autogpt_platform folder. 
+
+For more information, see https://agpt.co/blog/introducing-the-autogpt-platform
+
+---
+## 🤖 AutoGPT Classic
+> Below is information about the classic version of AutoGPT.
+
+**🛠️ [Build your own Agent - Quickstart](classic/FORGE-QUICKSTART.md)**
+
+### 🏗️ Forge
+
+**Forge your own agent!** &ndash; Forge is a ready-to-go toolkit to build your own agent application. It handles most of the boilerplate code, letting you channel all your creativity into the things that set *your* agent apart. All tutorials are located [here](https://medium.com/@aiedge/autogpt-forge-e3de53cc58ec). Components from [`forge`](/classic/forge/) can also be used individually to speed up development and reduce boilerplate in your agent project.
+
+🚀 [**Getting Started with Forge**](https://github.com/Significant-Gravitas/AutoGPT/blob/master/classic/forge/tutorials/001_getting_started.md) &ndash;
+This guide will walk you through the process of creating your own agent and using the benchmark and user interface.
+
+📘 [Learn More](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/forge) about Forge
+
+### 🎯 Benchmark
+
+**Measure your agent's performance!** The `agbenchmark` can be used with any agent that supports the agent protocol, and the integration with the project's [CLI] makes it even easier to use with AutoGPT and forge-based agents. The benchmark offers a stringent testing environment. Our framework allows for autonomous, objective performance evaluations, ensuring your agents are primed for real-world action.
+
+<!-- TODO: insert visual demonstrating the benchmark -->
+
+📦 [`agbenchmark`](https://pypi.org/project/agbenchmark/) on Pypi
+&ensp;|&ensp;
+📘 [Learn More](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/benchmark) about the Benchmark
+
+### 💻 UI
+
+**Makes agents easy to use!** The `frontend` gives you a user-friendly interface to control and monitor your agents. It connects to agents through the [agent protocol](#-agent-protocol), ensuring compatibility with many agents from both inside and outside of our ecosystem.
+
+<!-- TODO: insert screenshot of front end -->
+
+The frontend works out-of-the-box with all agents in the repo. Just use the [CLI] to run your agent of choice!
+
+📘 [Learn More](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/frontend) about the Frontend
+
+### ⌨️ CLI
+
+[CLI]: #-cli
+
+To make it as easy as possible to use all of the tools offered by the repository, a CLI is included at the root of the repo:
+
+```shell
+$ ./run
+Usage: cli.py [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  agent      Commands to create, start and stop agents
+  benchmark  Commands to start the benchmark and list tests and categories
+  setup      Installs dependencies needed for your system.
+```
+
+Just clone the repo, install dependencies with `./run setup`, and you should be good to go!
+
+## 🤔 Questions? Problems? Suggestions?
+
+### Get help - [Discord 💬](https://discord.gg/autogpt)
+
+[![Join us on Discord](https://invidget.switchblade.xyz/autogpt)](https://discord.gg/autogpt)
+
+To report a bug or request a feature, create a [GitHub Issue](https://github.com/Significant-Gravitas/AutoGPT/issues/new/choose). Please ensure someone else hasn’t created an issue for the same topic.
+
+## 🤝 Sister projects
+
+### 🔄 Agent Protocol
+
+To maintain a uniform standard and ensure seamless compatibility with many current and future applications, AutoGPT employs the [agent protocol](https://agentprotocol.ai/) standard by the AI Engineer Foundation. This standardizes the communication pathways from your agent to the frontend and benchmark.
+
+---
+
+## Stars stats
+
 <p align="center">
-If you can spare a coffee, you can help to cover the API costs of developing Auto-GPT and help push the boundaries of fully autonomous AI!
-A full day of development can easily cost as much as $20 in API costs, which for a free project is quite limiting.
-Your support is greatly appreciated
+<a href="https://star-history.com/#Significant-Gravitas/AutoGPT">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date" />
+  </picture>
+</a>
 </p>
 
-<p align="center">
- Development of this free, open-source project is made possible by all the <a href="https://github.com/Torantulino/Auto-GPT/graphs/contributors">contributors</a> and <a href="https://github.com/sponsors/Torantulino">sponsors</a>. If you'd like to sponsor this project and have your avatar or company logo appear below <a href="https://github.com/sponsors/Torantulino">click here</a>.
 
-<h3 align="center">Individual Sponsors</h3>
-<p align="center">
-<a href="https://github.com/robinicus"><img src="https://github.com/robinicus.png" width="50px" alt="robinicus" /></a>&nbsp;&nbsp;<a href="https://github.com/prompthero"><img src="https://github.com/prompthero.png" width="50px" alt="prompthero" /></a>&nbsp;&nbsp;<a href="https://github.com/crizzler"><img src="https://github.com/crizzler.png" width="50px" alt="crizzler" /></a>&nbsp;&nbsp;<a href="https://github.com/tob-le-rone"><img src="https://github.com/tob-le-rone.png" width="50px" alt="tob-le-rone" /></a>&nbsp;&nbsp;<a href="https://github.com/FSTatSBS"><img src="https://github.com/FSTatSBS.png" width="50px" alt="FSTatSBS" /></a>&nbsp;&nbsp;<a href="https://github.com/toverly1"><img src="https://github.com/toverly1.png" width="50px" alt="toverly1" /></a>&nbsp;&nbsp;<a href="https://github.com/ddtarazona"><img src="https://github.com/ddtarazona.png" width="50px" alt="ddtarazona" /></a>&nbsp;&nbsp;<a href="https://github.com/Nalhos"><img src="https://github.com/Nalhos.png" width="50px" alt="Nalhos" /></a>&nbsp;&nbsp;<a href="https://github.com/Kazamario"><img src="https://github.com/Kazamario.png" width="50px" alt="Kazamario" /></a>&nbsp;&nbsp;<a href="https://github.com/pingbotan"><img src="https://github.com/pingbotan.png" width="50px" alt="pingbotan" /></a>&nbsp;&nbsp;<a href="https://github.com/indoor47"><img src="https://github.com/indoor47.png" width="50px" alt="indoor47" /></a>&nbsp;&nbsp;<a href="https://github.com/AuroraHolding"><img src="https://github.com/AuroraHolding.png" width="50px" alt="AuroraHolding" /></a>&nbsp;&nbsp;<a href="https://github.com/kreativai"><img src="https://github.com/kreativai.png" width="50px" alt="kreativai" /></a>&nbsp;&nbsp;<a href="https://github.com/hunteraraujo"><img src="https://github.com/hunteraraujo.png" width="50px" alt="hunteraraujo" /></a>&nbsp;&nbsp;<a href="https://github.com/Explorergt92"><img src="https://github.com/Explorergt92.png" width="50px" alt="Explorergt92" /></a>&nbsp;&nbsp;<a href="https://github.com/judegomila"><img src="https://github.com/judegomila.png" width="50px" alt="judegomila" /></a>&nbsp;&nbsp;
-<a href="https://github.com/thepok"><img src="https://github.com/thepok.png" width="50px" alt="thepok" /></a>
-&nbsp;&nbsp;<a href="https://github.com/SpacingLily"><img src="https://github.com/SpacingLily.png" width="50px" alt="SpacingLily" /></a>&nbsp;&nbsp;<a href="https://github.com/merwanehamadi"><img src="https://github.com/merwanehamadi.png" width="50px" alt="merwanehamadi" /></a>&nbsp;&nbsp;<a href="https://github.com/m"><img src="https://github.com/m.png" width="50px" alt="m" /></a>&nbsp;&nbsp;<a href="https://github.com/zkonduit"><img src="https://github.com/zkonduit.png" width="50px" alt="zkonduit" /></a>&nbsp;&nbsp;<a href="https://github.com/maxxflyer"><img src="https://github.com/maxxflyer.png" width="50px" alt="maxxflyer" /></a>&nbsp;&nbsp;<a href="https://github.com/tekelsey"><img src="https://github.com/tekelsey.png" width="50px" alt="tekelsey" /></a>&nbsp;&nbsp;<a href="https://github.com/digisomni"><img src="https://github.com/digisomni.png" width="50px" alt="digisomni" /></a>&nbsp;&nbsp;<a href="https://github.com/nocodeclarity"><img src="https://github.com/nocodeclarity.png" width="50px" alt="nocodeclarity" /></a>&nbsp;&nbsp;<a href="https://github.com/tjarmain"><img src="https://github.com/tjarmain.png" width="50px" alt="tjarmain" /></a>
-</p>
+## ⚡ Contributors
 
-
-## Table of Contents
-
-- [Auto-GPT: An Autonomous GPT-4 Experiment](#auto-gpt-an-autonomous-gpt-4-experiment)
-    - [Demo (30/03/2023):](#demo-30032023)
-  - [💖 Help Fund Auto-GPT's Development](#-help-fund-auto-gpts-development)
-  - [Table of Contents](#table-of-contents)
-  - [🚀 Features](#-features)
-  - [📋 Requirements](#-requirements)
-  - [💾 Installation](#-installation)
-  - [🔧 Usage](#-usage)
-  - [🗣️ Speech Mode](#️-speech-mode)
-  - [🔍 Google API Keys Configuration](#-google-api-keys-configuration)
-    - [Setting up environment variables](#setting-up-environment-variables)
-  - [💀 Continuous Mode ⚠️](#-continuous-mode-️)
-  - [GPT3.5 ONLY Mode](#gpt35-only-mode)
-  - [🖼 Image Generation](#image-generation)
-  - [⚠️ Limitations](#️-limitations)
-  - [🛡 Disclaimer](#-disclaimer)
-  - [🐦 Connect with Us on Twitter](#-connect-with-us-on-twitter)
-
-
-## 🚀 Features
-
-- 🌐 Internet access for searches and information gathering
-- 💾 Long-Term and Short-Term memory management
-- 🧠 GPT-4 instances for text generation
-- 🔗 Access to popular websites and platforms
-- 🗃️ File storage and summarization with GPT-3.5
-
-## 📋 Requirements
-- [Python 3.8 or later](https://www.tutorialspoint.com/how-to-install-python-in-windows)
-- [OpenAI API key](https://platform.openai.com/account/api-keys)
-- [PINECONE API key](https://www.pinecone.io/)
-
-Optional:
-- ElevenLabs Key (If you want the AI to speak)
-
-## 💾 Installation
-
-To install Auto-GPT, follow these steps:
-
-0. Make sure you have all the **requirements** above, if not, install/get them.
-
-*The following commands should be executed in a CMD, Bash or Powershell window. To do this, go to a folder on your computer, click in the folder path at the top and type CMD, then press enter.*
-
-1. Clone the repository:
-For this step you need Git installed, but you can just download the zip file instead by clicking the button at the top of this page ☝️
-```
-git clone https://github.com/Torantulino/Auto-GPT.git
-```
-
-2. Navigate to the project directory:
-*(Type this into your CMD window, you're aiming to navigate the CMD window to the repository you just downloaded)*
-```
-cd 'Auto-GPT'
-```
-
-3. Install the required dependencies:
-*(Again, type this into your CMD window)*
-```
-pip install -r requirements.txt
-```
-
-4. Rename `.env.template` to `.env` and fill in your `OPENAI_API_KEY`. If you plan to use Speech Mode, fill in your `ELEVEN_LABS_API_KEY` as well.
-  - Obtain your OpenAI API key from: https://platform.openai.com/account/api-keys.
-  - Obtain your ElevenLabs API key from: https://elevenlabs.io. You can view your xi-api-key using the "Profile" tab on the website.
-  - If you want to use GPT on an Azure instance, set `USE_AZURE` to `True` and provide the `OPENAI_AZURE_API_BASE`, `OPENAI_AZURE_API_VERSION` and `OPENAI_AZURE_DEPLOYMENT_ID` values as explained here: https://pypi.org/project/openai/ in the `Microsoft Azure Endpoints` section
-
-## 🔧 Usage
-
-1. Run the `main.py` Python script in your terminal:
-*(Type this into your CMD window)*
-```
-python scripts/main.py
-```
-2. After each of AUTO-GPT's actions, type "NEXT COMMAND" to authorise them to continue.
-3. To exit the program, type "exit" and press Enter.
-
-## 🗣️ Speech Mode
-Use this to use TTS for Auto-GPT
-```
-python scripts/main.py --speak
-
-```
-
-## 🔍 Google API Keys Configuration
-
-This section is optional, use the official google api if you are having issues with error 429 when running a google search.
-To use the `google_official_search` command, you need to set up your Google API keys in your environment variables.
-
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
-2. If you don't already have an account, create one and log in.
-3. Create a new project by clicking on the "Select a Project" dropdown at the top of the page and clicking "New Project". Give it a name and click "Create".
-4. Go to the [APIs & Services Dashboard](https://console.cloud.google.com/apis/dashboard) and click "Enable APIs and Services". Search for "Custom Search API" and click on it, then click "Enable".
-5. Go to the [Credentials](https://console.cloud.google.com/apis/credentials) page and click "Create Credentials". Choose "API Key".
-6. Copy the API key and set it as an environment variable named `GOOGLE_API_KEY` on your machine. See setting up environment variables below.
-7. Go to the [Custom Search Engine](https://cse.google.com/cse/all) page and click "Add".
-8. Set up your search engine by following the prompts. You can choose to search the entire web or specific sites.
-9.  Once you've created your search engine, click on "Control Panel" and then "Basics". Copy the "Search engine ID" and set it as an environment variable named `CUSTOM_SEARCH_ENGINE_ID` on your machine. See setting up environment variables below.
-
-*Remember that your free daily custom search quota allows only up to 100 searches. To increase this limit, you need to assign a billing account to the project to profit from up to 10K daily searches.*
-
-### Setting up environment variables
-   For Windows Users:
-```
-setx GOOGLE_API_KEY "YOUR_GOOGLE_API_KEY"
-setx CUSTOM_SEARCH_ENGINE_ID "YOUR_CUSTOM_SEARCH_ENGINE_ID"
-
-```
-For macOS and Linux users:
-```
-export GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
-export CUSTOM_SEARCH_ENGINE_ID="YOUR_CUSTOM_SEARCH_ENGINE_ID"
-
-```
-
-## Redis Setup
-
-Install docker desktop.
-
-Run:
-```
-docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest
-```
-See https://hub.docker.com/r/redis/redis-stack-server for setting a password and additional configuration.
-
-Set the following environment variables:
-```
-MEMORY_BACKEND=redis
-REDIS_HOST=localhost
-REDIS_PORT=6379
-REDIS_PASSWORD=
-```
-
-Note that this is not intended to be run facing the internet and is not secure, do not expose redis to the internet without a password or at all really.
-
-You can optionally set
-
-```
-WIPE_REDIS_ON_START=False
-```
-
-To persist memory stored in Redis.
-
-You can specify the memory index for redis using the following:
-
-````
-MEMORY_INDEX=whatever
-````
-
-## 🌲 Pinecone API Key Setup
-
-Pinecone enables the storage of vast amounts of vector-based memory, allowing for only relevant memories to be loaded for the agent at any given time.
-
-1. Go to app.pinecone.io and make an account if you don't already have one.
-2. Choose the `Starter` plan to avoid being charged.
-3. Find your API key and region under the default project in the left sidebar.
-
-### Setting up environment variables
-
-Simply set them in the `.env` file. 
-
-Alternatively, you can set them from the command line (advanced):
-
-For Windows Users:
-```
-setx PINECONE_API_KEY "YOUR_PINECONE_API_KEY"
-setx PINECONE_ENV "Your pinecone region" # something like: us-east4-gcp
-
-```
-For macOS and Linux users:
-```
-export PINECONE_API_KEY="YOUR_PINECONE_API_KEY"
-export PINECONE_ENV="Your pinecone region" # something like: us-east4-gcp
-
-```
-
-
-## View Memory Usage
-
-1. View memory usage by using the `--debug` flag :)
-
-
-## 💀 Continuous Mode ⚠️
-Run the AI **without** user authorisation, 100% automated.
-Continuous mode is not recommended.
-It is potentially dangerous and may cause your AI to run forever or carry out actions you would not usually authorise.
-Use at your own risk.
-1. Run the `main.py` Python script in your terminal:
-```
-python scripts/main.py --continuous
-
-```
-2. To exit the program, press Ctrl + C
-
-## GPT3.5 ONLY Mode
-If you don't have access to the GPT4 api, this mode will allow you to use Auto-GPT!
-```
-python scripts/main.py --gpt3only
-```
-It is recommended to use a virtual machine for tasks that require high security measures to prevent any potential harm to the main computer's system and data.
-
-## 🖼 Image Generation
-By default, Auto-GPT uses DALL-e for image generation. To use Stable Diffusion, a [HuggingFace API Token](https://huggingface.co/settings/tokens) is required.
-
-Once you have a token, set these variables in your `.env`:
-```
-IMAGE_PROVIDER=sd
-HUGGINGFACE_API_TOKEN="YOUR_HUGGINGFACE_API_TOKEN"
-```
-
-## ⚠️ Limitations
-This experiment aims to showcase the potential of GPT-4 but comes with some limitations:
-
-1. Not a polished application or product, just an experiment
-2. May not perform well in complex, real-world business scenarios. In fact, if it actually does, please share your results!
-3. Quite expensive to run, so set and monitor your API key limits with OpenAI!
-
-## 🛡 Disclaimer
-
-Disclaimer
-This project, Auto-GPT, is an experimental application and is provided "as-is" without any warranty, express or implied. By using this software, you agree to assume all risks associated with its use, including but not limited to data loss, system failure, or any other issues that may arise.
-
-The developers and contributors of this project do not accept any responsibility or liability for any losses, damages, or other consequences that may occur as a result of using this software. You are solely responsible for any decisions and actions taken based on the information provided by Auto-GPT.
-
-**Please note that the use of the GPT-4 language model can be expensive due to its token usage.** By utilizing this project, you acknowledge that you are responsible for monitoring and managing your own token usage and the associated costs. It is highly recommended to check your OpenAI API usage regularly and set up any necessary limits or alerts to prevent unexpected charges.
-
-As an autonomous experiment, Auto-GPT may generate content or take actions that are not in line with real-world business practices or legal requirements. It is your responsibility to ensure that any actions or decisions made based on the output of this software comply with all applicable laws, regulations, and ethical standards. The developers and contributors of this project shall not be held responsible for any consequences arising from the use of this software.
-
-By using Auto-GPT, you agree to indemnify, defend, and hold harmless the developers, contributors, and any affiliated parties from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from your use of this software or your violation of these terms.
-
-## 🐦 Connect with Us on Twitter
-
-Stay up-to-date with the latest news, updates, and insights about Auto-GPT by following our Twitter accounts. Engage with the developer and the AI's own account for interesting discussions, project updates, and more.
-
-- **Developer**: Follow [@siggravitas](https://twitter.com/siggravitas) for insights into the development process, project updates, and related topics from the creator of Entrepreneur-GPT.
-- **Entrepreneur-GPT**: Join the conversation with the AI itself by following [@En_GPT](https://twitter.com/En_GPT). Share your experiences, discuss the AI's outputs, and engage with the growing community of users.
-
-We look forward to connecting with you and hearing your thoughts, ideas, and experiences with Auto-GPT. Join us on Twitter and let's explore the future of AI together!
-
-<p align="center">
-  <a href="https://star-history.com/#Torantulino/auto-gpt&Date">
-    <img src="https://api.star-history.com/svg?repos=Torantulino/auto-gpt&type=Date" alt="Star History Chart">
-  </a>
-</p>
+<a href="https://github.com/Significant-Gravitas/AutoGPT/graphs/contributors" alt="View Contributors">
+  <img src="https://contrib.rocks/image?repo=Significant-Gravitas/AutoGPT&max=1000&columns=10" alt="Contributors" />
+</a>
